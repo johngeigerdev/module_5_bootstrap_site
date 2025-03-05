@@ -1,0 +1,48 @@
+
+:root {
+    --light-grey: rgb(223, 223, 223);
+    --pure-white: rgb(255, 255, 255);
+    --pure-black: rgb(0, 0, 0);
+}
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body p {
+    font-size: 15px;
+    line-height: 25px;
+}
+body h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+    font-weight: bold;
+}
+body h2 {
+    font-size: 24px;
+    line-height: 25px;
+    font-weight: bold;
+}
+body h3 {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: bold;
+}
+body h4 {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+}
+nav {
+    height: 72px
+}
+.nav-link {
+    color: black;
+}
+button {
+    letter-spacing: 2px;
+}
