@@ -64,7 +64,16 @@ button {
     border-radius: 0;
     align-items: start;
     padding: 0 3rem;
-    background: none;
+    color: white;
+    position: relative; /* this is for allowing position absolute to work in the .card-text class */ 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+}
+.card-text {
+    position: absolute;
+    bottom: 5rem;
+    left: 3rem;
 }
 hr {
     border: 1px solid #fff;
