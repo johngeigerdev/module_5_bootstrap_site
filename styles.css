@@ -90,6 +90,7 @@ hr {
 }
 .bottom-card {
     background-color: white;
+    border-radius: 0; /* without this, there will still be radius marks at top of cards */
 }
 .bottom-card .card-body {
     padding: 0 2rem;
