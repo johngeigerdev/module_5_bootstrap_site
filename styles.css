@@ -86,22 +86,31 @@ hr {
 }
 .bottom-cards {
     width: 100%;
-    background-color: green;
+    height: 40vh;
 }
 .bottom-card {
-    background-color: white;
     border-radius: 0; /* without this, there will still be radius marks at top of cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem;
 }
-.bottom-card .card-body {
-    padding: 0 2rem;
-}
+
 .bottom-card img{
     width: 75px;
     height: 75px;
-    margin: 5rem auto 2rem; 
-    background-color: none;
-    
+    margin: 2rem auto;
 }
+.bottom-card-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
