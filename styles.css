@@ -59,8 +59,54 @@ button {
 .main-cards{
     padding: 0 5rem;
 }
-.card {
+.img-cards {
     height: 500px;
     border-radius: 0;
+    align-items: start;
+    padding: 0 3rem;
+    background: none;
+}
+hr {
+    border: 1px solid #fff;
+    z-index: 5;
+    width: 100%;
+}
+.main-txt {
+    padding: 4rem 10rem;
+    min-height: 60vh;
+}
+.bottom-cards {
+    width: 100%;
+    background-color: green;
+}
+.bottom-card {
+    background-color: white;
+}
+.bottom-card .card-body {
+    padding: 0 2rem;
+}
+.bottom-card img{
+    width: 75px;
+    height: 75px;
+    margin: 5rem auto 2rem; 
+    background-color: none;
     
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
