@@ -14,27 +14,28 @@
   <title>Photosnap</title>
 </head>
   <body>
-    <nav class="navbar navbar-expand-md bg-white sticky-top px-5">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top px-5">
       <div class="container-fluid d-flex">
-        <a class="navbar-brand" href="#"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav justify-content-center flex-grow-1 mb-2 mb-lg-0"> <!-- flex grow put tiems in center -->
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Stories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-          </ul>
+      <a class="navbar-brand" href="#"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-center flex-grow-1 mb-2 mb-lg-0"> <!-- flex grow put items in center -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Stories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <div>
           <button class="btn bg-dark text-white btn-md px-3" style="border-radius: 0">GET AN INVITE</button>
         </div>
       </div>
@@ -138,7 +139,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="row bottom-cards">
+        <div class="row bottom-cards mb-1">
             <div class="card bottom-card col col-md-4 col-12 border-0">
             <img src="./assets/features/desktop/responsive.svg" alt="" class="card-img-top">
             <div class="bottom-card-body">
@@ -170,32 +171,55 @@
             </div>
           </div>
         </div>
-        
       </div>
     </main>
+    <footer class="bg-dark p-4">
+      <div class="container d-flex justify-content-between mt-5 p-0 w-100">
+        <div class="l-footer d-flex justify-content-between gap-5">
+          <div>
+            <a href="#"><img class="footer-logo mb-5" src="assets/shared/desktop/white-logo.svg" alt=""></a>
+            <div class="footer-icons mt-4">
+              
+              <!-- facebook -->
+              <a href="#"><img src="assets/shared/desktop/facebook.png" alt=""></a>
 
-    
+              <!-- YouTube -->
+              <a href="#"><img src="assets/shared/desktop/youtube.png" alt=""></a>
 
-    
+              <!-- twitter  -->
+              <a href="#"><img src="assets/shared/desktop/twitter.png" alt=""></a>
 
-    No Photo Upload Limit
+              <!-- pinterest -->
+              <a href="#"><img src="assets/shared/desktop/pinterest.png" alt=""></a>
 
-    Our tool has no limits on uploads or bandwidth. Freely upload in bulk and 
-    share all of your stories in one go.
-
-    Available to Embed
-
-    Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, 
-    Google Maps, and more. 
-
-    Home
-    Stories
-    Features
-    Pricing
-
-    Get an invite
-
-    Copyright 2019. All Rights Reserved
+              <!-- Instagram -->
+              <a href="#"><img src="assets/shared/desktop/instagram.png" alt=""></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <ul class="text-uppercase text-white list-unstyled d-flex flex-column gap-2">
+              <li>home</li>
+              <li>stores</li>
+              <li>features</li>
+              <li>pricing</li>
+            </ul>
+          </div>
+        </div>
+        <div class="r-footer">
+          <div class="d-flex flex-column gap-5">
+            <div class="arrow-btn d-flex align-content-center gap-2 ">
+              <h4 class="mb-0 text-white">GET AN INVITE</h4>
+              <img class="white-arrow ms-2 pb-4" src="./assets/shared/desktop/arrow.svg" alt="right arrow">
+            </div>
+            <div>
+              <p class="text-white">
+                Copyright 2019. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

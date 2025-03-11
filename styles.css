@@ -108,6 +108,10 @@ hr {
     flex-direction: column;
     margin-top: 2rem;
 }
+footer {
+    height: 250px;
+    letter-spacing: 2px;
+}
 
 
 
