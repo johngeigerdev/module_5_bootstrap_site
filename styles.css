@@ -126,6 +126,14 @@ footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .l-footer {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
