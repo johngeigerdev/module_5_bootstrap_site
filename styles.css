@@ -124,13 +124,8 @@ footer {
     height: 650px;
     padding: 15rem 0;
 }
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    width: 40%;
+.hero-text {
+    margin-bottom: 15rem;
 }
 
 /* Small devices (landscape phones, 576px and up) */
