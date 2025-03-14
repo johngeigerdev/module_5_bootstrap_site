@@ -13,6 +13,9 @@ html {
     font-optical-sizing: auto;
     font-style: normal;
 }
+.main-container {
+    margin-top: 3rem;
+}
 body p {
     font-size: 15px;
     line-height: 25px;
@@ -114,9 +117,14 @@ hr {
 }
 footer {
     letter-spacing: 3px;
-    bottom: 0px
 }
 
+/* Stories Page */
+.hero {
+    height: 650px;
+    background-image: url('./assets/stories/desktop/moon-of-appalacia.jpg');
+    background-size: cover;
+}
 
 
 /* Small devices (landscape phones, 576px and up) */
@@ -126,14 +134,14 @@ footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    footer {
+    /* footer {
         display: flex;
         flex-direction: column;
     }
     .l-footer {
         display: flex;
         flex-direction: column;
-    }
+    } */
 
 }
 
