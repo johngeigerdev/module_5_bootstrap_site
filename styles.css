@@ -120,12 +120,18 @@ footer {
 }
 
 /* Stories Page */
-.hero {
+.hero-container {
     height: 650px;
-    background-image: url('./assets/stories/desktop/moon-of-appalacia.jpg');
-    background-size: cover;
+    padding: 15rem 0;
 }
-
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 40%;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -134,20 +140,12 @@ footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    /* footer {
-        display: flex;
-        flex-direction: column;
-    }
-    .l-footer {
-        display: flex;
-        flex-direction: column;
-    } */
-
+  
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+ 
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
