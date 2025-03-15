@@ -121,7 +121,7 @@ footer {
 
 /* Stories Page */
 .hero-container {
-    height: 650px;
+    height: auto;
     padding: 15rem 0;
     width: 100%;
     position: relative;
@@ -155,13 +155,7 @@ footer {
 }
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 850px) {
-    .hero-overlay {
-        position: absolute;
-        top: 40px;
-        left: 75px;
-        width: 50%;
-        overflow: hidden;
-    }
+    
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
