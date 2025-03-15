@@ -123,9 +123,21 @@ footer {
 .hero-container {
     height: 650px;
     padding: 15rem 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
-.hero-text {
-    margin-bottom: 15rem;
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-overlay {
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    width: 50%;
+    overflow: hidden;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -135,12 +147,25 @@ footer {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  
+    .hero-overlay {
+        top: 40px;
+        left: 75px;
+        width: 70%;
+      }
 }
-
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 850px) {
+    .hero-overlay {
+        position: absolute;
+        top: 40px;
+        left: 75px;
+        width: 50%;
+        overflow: hidden;
+    }
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
- 
+   
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
