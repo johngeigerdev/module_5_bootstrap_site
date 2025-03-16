@@ -133,6 +133,14 @@ footer {
     display: block;
 }
 
+/* features page */
+.in-beta {
+    background-image: url(./assets/shared/desktop/bg-beta.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
