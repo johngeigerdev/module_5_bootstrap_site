@@ -132,34 +132,39 @@ footer {
     height: auto;
     display: block;
 }
-.hero-overlay {
-    position: absolute;
-    top: 40px;
-    left: 75px;
-    width: 50%;
-    overflow: hidden;
-}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+    .hero-overlay {
+        position: absolute;
+        top: 40px;
+        left: 75px;
+        width: 55%;
+      }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    .hero-overlay {
-        top: 40px;
-        left: 75px;
-        width: 70%;
-      }
+    
 }
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 850px) {
-    
+    .hero-overlay {
+        position: absolute;
+        top: 40px;
+        left: 75px;
+        width: 50%;
+      }
 }
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-   
+@media screen and (min-width: 992px) {
+    .hero-overlay {
+        position: absolute;
+        top: 40px;
+        left: 75px;
+        width: 30%;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
