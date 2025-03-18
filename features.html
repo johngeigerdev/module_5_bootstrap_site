@@ -44,12 +44,43 @@
     <main class="main-container container-fluid m-0 pt-5 px-0">
       <!-- features hero -->
       <section class="features-hero">
-        <div class="story-features row">
-          <h1>Features</h1>
-          <p>We make sure all of our features are designed to be loved by every aspiring and even 
-            professional photograpers who wanted to share their stories.</p>
+        <!-- for large screens and larger -->
+        <div class="row d-none d-md-flex py-0">
+          <div class="features-txt bg-dark text-white col-md-5 d-flex flex-column justify-content-center align-items-center p-0">
+            <div class="d-flex flex-column w-50">
+              <header class="d-flex justify-content-md-start text-start w-100"></header>
+                <h1 class="text-start">Features</h1>
+              </header>
+              <p>
+              We make sure all of our features are designed to be 
+              loved by every aspiring and even professional 
+              photograpers who wanted to share their stories.
+              </p> 
+            </div>
+          </div>
+          <div class="main-img col-md-7 p-0 m-0" style="min-height: 40vh;">
+            <img class="img-fluid h-100 w-100" src="./assets/features/desktop/hero.jpg" alt="" style="object-fit: cover;">
+          </div>
         </div>
-        <img src="./assets/features/desktop/hero.jpg" alt="hero image">
+
+        <!-- for medium screens and smaller -->
+        <div class="row d-flex d-md-none py-0">
+          <div class="features-txt bg-dark text-white col-12 order-2 d-flex flex-column justify-content-center align-items-center p-0">
+            <div class="d-flex flex-column w-50">
+              <header class="d-flex justify-content-md-start text-start w-100"></header>
+                <h1 class="text-start">Features</h1>
+              </header>
+              <p>
+              We make sure all of our features are designed to be 
+              loved by every aspiring and even professional 
+              photograpers who wanted to share their stories.
+              </p> 
+            </div>
+          </div>
+          <div class="main-img col-12 order-1 p-0 m-0" style="min-height: 40vh;">
+            <img class="img-fluid h-100 w-100" src="./assets/features/desktop/hero.jpg" alt="" style="object-fit: cover;">
+          </div>
+        </div>
       </section>
 
       <!-- feature links -->
@@ -88,45 +119,45 @@
         </div>
         <div class="row bottom-cards">
           <div class="card bottom-card col-md-12 border-0">
-            <img src="./assets/features/desktop/responsive.svg" alt="" class="card-img-top">
+            <img src="./assets/features/desktop/custom-domain.svg" alt="" class="card-img-top">
             <div class="bottom-card-body">
-              <h5 class="card-title text-center pb-4">100% Responsive</h5>
+              <h5 class="card-title text-center pb-4">Custom Domain</h5>
               <p class="text-center">
-              No matter which the device you’re on, our site is fully responsive and stories 
-              look beautiful on any screen.
+                With Photosnap subscriptions you can host your stories on your own domain. You can 
+                also remove our branding!
               </p>
             </div>
           </div>
           <div class="card bottom-card col-md-12 border-0">
-            <img src="./assets/features/desktop/no-limit.svg" alt="" class="card-img-top">
+            <img src="./assets/features/desktop/boost-exposure.svg" alt="" class="card-img-top">
             <div class="bottom-card-body">
-              <h5 class="card-title text-center pb-4">No Photo Upload Limit</h5>
+              <h5 class="card-title text-center pb-4">Boost Your Exposure</h5>
               <p class="text-center">
-                Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your 
-                stories in one go.
+                Users that viewed your story or gallery can easily get notifed of new and featured 
+  stories with our built in mailing list.
               </p>
             </div>
           </div>
           <div class="card bottom-card col-md-12 border-0">
-            <img src="./assets/features/desktop/embed.svg" alt="" class="card-img-top">
+            <img src="./assets/features/desktop/drag-drop.svg" alt="" class="card-img-top">
             <div class="bottom-card-body">
-                <h5 class="card-title text-center pb-4">Available to Embed</h5>
+                <h5 class="card-title text-center pb-4">Drag & Drop Image</h5>
                 <p class="text-center">
-                Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, 
-                and more. 
+                  Easily drag and drop your image and get beautiful shots everytime. No over the top 
+                  tooling to add friction to creating stories.
                 </p>
             </div>
           </div>
         </div>
+      </section>
 
       <!-- in beta -->
-      </section>
-      <section class="in-beta d-flex">
-        <div class="text-white d-flex justify-content-between align-items-center">
-          <h1 class="text-uppercase d-inline-block">we're in beta. <br /> Get your invite <br /> today!</h1>
-          <div class="arrow-btn d-flex align-content-center gap-2">
-            <h4 class="mb-0">GET AN INVITE</h4>
-            <img class="white-arrow ms-2 pb-4" src="./assets/shared/desktop/arrow.svg" alt="right arrow">
+      <section class="in-beta d-flex align-items-center justify-content-center">
+        <div class="text-white d-flex flex-column flex-md-row align-items-center justify-content-between w-100 px-5">
+          <h1 class="text-uppercase justify-content-center mb-4 mb-md-0" style="letter-spacing: 5px;">we're in beta. <br /> Get your invite <br /> today!</h1>
+          <div class="arrow-btn d-flex align-content-center justify-content-center gap-2">
+            <h3 class="mb-0" style="letter-spacing: 2px;">GET AN INVITE</h3>
+            <img class="white-arrow" src="./assets/shared/desktop/arrow.svg" alt="right-arrow" style="height: 1.5rem; width: auto;">
           </div>
         </div>
       </section>
@@ -205,39 +236,14 @@
   </body>
 </html>
 
+
+  
+
   
 
   
 
-  100% Responsive
-
-  No matter which the device you’re on, our site is fully responsive and stories 
-  look beautiful on any screen.
-
-  No Photo Upload Limit
-
-  Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share 
-  all of your stories in one go.
-
-  Available to Embed
-
-  Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google 
-  Maps, and more. 
-
-  Custom Domain
-
-  With Photosnap subscriptions you can host your stories on your own domain. You can 
-  also remove our branding!
-
-  Boost Your Exposure
-
-  Users that viewed your story or gallery can easily get notifed of new and featured 
-  stories with our built in mailing list.
-
-  Drag & Drop Image
-
-  Easily drag and drop your image and get beautiful shots everytime. No over the top 
-  tooling to add friction to creating stories.
+  
 
   We're in Beta. Get your invite today!
   
@@ -251,6 +257,3 @@
   Get an invite
 
   Copyright 2019. All Rights Reserved
-
-</body>
-</html>

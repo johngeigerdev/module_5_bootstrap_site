@@ -139,6 +139,12 @@ footer {
     background-size: cover;
     background-position: center;
     height: 280px;
+    width: 100vw;
+    overflow: hidden;
+}
+.features-txt {
+    padding: 4rem 10rem;
+    min-height: 60vh;
 }
 
 
