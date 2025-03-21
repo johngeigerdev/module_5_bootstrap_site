@@ -27,7 +27,7 @@ body h1 {
     font-weight: bold;
 }
 body h2 {
-    font-size: 24px;
+    font-size: 25px;
     line-height: 25px;
     font-weight: bold;
 }
@@ -46,6 +46,14 @@ nav {
 }
 .nav-link {
     color: black;
+}
+.nav-link:hover {
+    background-color: black;
+    color: white;
+}
+.nav-link.active:hover {
+    background-color: rgb(55, 138, 155);
+    color: white;
 }
 button {
     letter-spacing: 2px;
@@ -147,6 +155,61 @@ footer {
     min-height: 60vh;
 }
 
+/* pricing page */
+.pricing-text {
+    padding: 4rem 10rem;
+    min-height: 60vh;
+}
+.pricing-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.pricing-toggle span {
+    font-size: 28px;
+    font-weight: 600;
+}
+.form-check-input {
+    transform: scale(2);
+}
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+
+
+}
+.pricing-card {
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    background-color: #F5F5F5;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+}
+.pricing-card:hover {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    height: 470px;
+    align-items: center;
+  }
+.pricing-card:hover button {
+    background-color: white;
+    color: black;
+  }
+.form-check-label span {
+    font-weight: bold;
+  }
+
+/* compare box */
+#compare {
+    margin-top: 2rem;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
