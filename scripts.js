@@ -26,3 +26,22 @@ toggle.addEventListener('change', () => {
         //'per year', otherwise it makes it 'per month'
     });
 });
+
+document.getElementById('inviteForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form reload
+
+    // Hide the form, hide submit button, show success message
+    document.getElementById('formContent').classList.add('d-none');
+    document.getElementById('submitBtn').classList.add('d-none');
+    document.getElementById('successMessage').classList.remove('d-none');
+});
+
+
+// Reset form when modal is closed
+var inviteModal = document.getElementById('inviteModal');
+inviteModal.addEventListener('hidden.bs.modal', function() {
+    document.getElementById('inviteForm').reset();
+    document.getElementById('formContent').classList.remove('d-none');
+    document.getElementById('submitBtn').classList.remove('d-none');
+    document.getElementById('successMessage').classList.add('d-none');
+});

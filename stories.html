@@ -16,7 +16,7 @@
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top px-5">
       <div class="container-fluid d-flex">
-      <a class="navbar-brand" href="#"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
+      <a class="navbar-brand" href="./index.html"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -36,10 +36,51 @@
           </li>
         </ul>
         <div>
-          <button class="btn bg-dark text-white btn-md px-3" style="border-radius: 0">GET AN INVITE</button>
+          <button class="btn bg-dark text-white btn-md px-3 invite-btn" style="border-radius: 0" data-bs-toggle="modal" data-bs-target="#inviteModal">GET AN INVITE</button>
         </div>
       </div>
     </nav>
+
+    <!-- Invite Modal -->
+    <div class="modal fade" id="inviteModal" tabindex="-1" aria-labelledby="inviteModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="inviteModalLabel">Get an Invite!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="inviteForm">
+              <div id="formContent">
+                <div class="mb-3">
+                  <label for="recipient-fname" class="col-form-label">First Name</label>
+                  <input type="text" class="form-control" id="recipient-fname">
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-lname" class="col-form-label">Last name</label>
+                  <input type="text" class="form-control" id="recipient-lname">
+                </div>
+                <div class="mb-3">
+                  <label for="recipient-email" class="col-form-label">Your Email</label>
+                  <input type="email" class="form-control" id="recipient-email">
+                </div>
+              </div>
+              <!-- Success Message -->
+               <div id="successMessage" class="text-success fw-bold text-center d-none">
+                <p>Your invite will be sent to your email!</p>
+               </div>
+
+              <!-- Submit Button -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-dark" id="submitBtn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <main class="main-container container-fluid m-0 pt-5 px-0">
       <div class="w-100 hero-container py-0 mb-0">
         <!-- For larger screens: Image with text overlay -->
@@ -348,6 +389,28 @@
         </div>
       </section>
     </footer>
+    
+    <script>
+      // I put this script in the .html b/c it wasn't running when I had it in the script.js file 
+      document.getElementById('inviteForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form reload
+
+      // Hide the form, hide submit button, show success message
+      document.getElementById('formContent').classList.add('d-none');
+      document.getElementById('submitBtn').classList.add('d-none');
+      document.getElementById('successMessage').classList.remove('d-none');
+  });
+
+
+  // Reset form when modal is closed
+    var inviteModal = document.getElementById('inviteModal');
+    inviteModal.addEventListener('hidden.bs.modal', function() {
+        document.getElementById('inviteForm').reset();
+        document.getElementById('formContent').classList.remove('d-none');
+        document.getElementById('submitBtn').classList.remove('d-none');
+        document.getElementById('successMessage').classList.add('d-none');
+    });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
