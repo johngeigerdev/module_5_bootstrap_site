@@ -14,6 +14,7 @@
     <title>Photosnap</title>
   </head>
 <body>
+    <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top px-5">
     <div class="container-fluid d-flex">
     <a class="navbar-brand" href="#"><img src="./assets/shared/desktop/logo.svg" alt=""></a>
@@ -84,86 +85,203 @@
     </section>
 
     <!-- pricing section -->
-    <section id="pricing">
-      <div class="row pricing-cards gap-5">
-        <!-- toggle switch -->
-        <div class="pricing-toggle mt-5 mb-0 d-flex justify-content-betwen align-items-center gap-4">
+    <section id="pricing" class="container-fluid">
+      <!-- toggle switch -->
+       <div class="row">
+        <div class="pricing-toggle mt-5 mb-0 d-flex justify-content-center align-items-center gap-5">
           <span id="billingLabelMonthly">Monthly</span>
           <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" id="billingToggle">
           </div>
           <span id="billingLabelYearly">Yearly</span>
         </div>
+       </div>
 
+      <div class="row pricing-cards align-items-stretch gx-4 px-5 mt-5 mx-2 d-flex align-content-center justify-content-center">
         <!-- pricing cards -->
-        <div class="col-md-3 pricing-card border border-light">
-          <h2>Basic</h2>
-          <p>
-            Includes basic usage of our platform. Recommended for new and aspiring photographers.
-          </p>
-          <h1><span class="price" data-monthly="19" data-yearly="190">$19.00</span></h1>
-          <p class="billing-period">per month</p>
-          <button class="btn btn-dark">Pick Plan</button>
+        <div class="col-12 col-sm-6 col-lg-4 d-flex my-2">
+          <div class="pricing-card border border-light p-5 w-100 d-flex flex-column justify-content-between">
+            <h2>Basic</h2>
+            <p>
+              Includes basic usage of our platform. Recommended for new and aspiring photographers.
+            </p>
+            <h1><span class="price" data-monthly="19" data-yearly="190">$19.00</span></h1>
+            <p class="billing-period">per month</p>
+            <button class="btn btn-dark mt-3">Pick Plan</button>
+          </div>
         </div>
-        <div class="col-md-3 pricing-card border border-light">
-          <h2>Pro</h2>
-          <p>
-            More advanced features available. Recommended for photography veterans and professionals.
-          </p>
-          <h1><span class="price" data-monthly="39" data-yearly="390">$39.00</span></h1>
-          <p class="billing-period">per month</p>
-          <button class="btn btn-dark">Pick Plan</button>
+        
+        <div class="col-12 col-sm-6 col-lg-4 d-flex my-2">
+          <div class="pricing-card border border-light p-5 w-100 d-flex flex-column justify-content-between">
+              <h2>Pro</h2>
+              <p>
+                More advanced features available. Recommended for photography veterans and professionals.
+              </p>
+              <h1><span class="price" data-monthly="39" data-yearly="390">$39.00</span></h1>
+              <p class="billing-period">per month</p>
+              <button class="btn btn-dark mt-3">Pick Plan</button>
+          </div>
         </div>
-        <div class="col-md-3 pricing-card border border-light">
-          <h2>Business</h2>
-          <p>
+        
+        <div class="col-12 col-sm-6 col-lg-4 d-flex my-2">
+          <div class="pricing-card border border-light w-100 p-5 d-flex flex-column justify-content-between">
+            <h2>Business</h2>
+            <p>
             Additional features available such as more detailed metrics. Recommended for business owners.
-          </p>
-          <h1><span class="price" data-monthly="99" data-yearly="990">$99.00</span></h1>
-          <p class="billing-period">per month</p>
-          <button class="btn btn-dark">Pick Plan</button>
+            </p>
+            <h1><span class="price" data-monthly="99" data-yearly="990">$99.00</span></h1>
+            <p class="billing-period">per month</p>
+            <button class="btn btn-dark mt-3">Pick Plan</button>      
+          </div>
         </div>
       </div>
+      
     </section>
 
     <!-- compare box -->
-     <section id="compare">
-      <h1 class="text-center">Compare</h1>
-      <div class="compare-box">
-        
+     <section id="compare" class="container w-md-75 w-lg-50 my-5">
+      <div>
+        <h1 class="text-center">Compare</h1>
+        <table class="table features-table">
+          <thead class="">
+            <tr>
+              <th class="text-uppercase">the features</th>
+              <th class="text-uppercase">basic</th>
+              <th class="text-uppercase">pro</th>
+              <th class="text-uppercase">business</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UNLIMITED STORY POSTING</td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+            </tr>
+            <tr>
+              <td>UNLIMITED PHOTO UPLOAD</td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+            </tr>
+            <tr>
+              <td>EMBEDDING CUSTOM CONTENT</td>
+              <td></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+            </tr>
+            <tr>
+              <td>CUSTOMIZE METADATA</td>
+              <td></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+            </tr>
+            <tr>
+              <td>ADVANCED METRICS</td>
+              <td></td>
+              <td></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+            </tr>
+            <tr>
+              <td>PHOTO DOWNLOADS</td>
+              <td></td>
+              <td></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+            </tr>
+            <tr>
+              <td>SEARCH ENGINE INDEXING</td>
+              <td></td>
+              <td></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+            </tr>
+            <tr>
+              <td>CUSTOM ANALYTICS</td>
+              <td></td>
+              <td></td>
+              <td><svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="none" stroke="#000" stroke-width="3" d="M1 8.124L5.623 13 17 1"/></svg></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
      </section>
+
+    <!-- in beta -->
+    <section class="in-beta d-flex align-items-center justify-content-center">
+      <div class="text-white d-flex flex-column flex-md-row align-items-center justify-content-between w-100 px-5">
+        <h1 class="text-uppercase justify-content-center mb-4 mb-md-0" style="letter-spacing: 5px;">we're in beta. <br /> Get your invite <br /> today!</h1>
+        <div class="arrow-btn d-flex align-content-center justify-content-center gap-2">
+          <h3 class="mb-0" style="letter-spacing: 2px;">GET AN INVITE</h3>
+          <img class="white-arrow" src="./assets/shared/desktop/arrow.svg" alt="right-arrow" style="height: 1.5rem; width: auto;">
+        </div>
+      </div>
+    </section>
   </main>
 
-  
+  <!-- footer -->
+  <footer class="text-center text-lg-start bg-dark text-white pt-3">
+    <section class="">
+      <div class="container text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ms-3 me-1">
+            <!-- Content -->
+            <a href="#"><img class="footer-logo mb-5" src="assets/shared/desktop/white-logo.svg" alt=""></a>
+            <div class="footer-icons mt-5">
+              <!-- facebook -->
+              <a href="#"><img src="assets/shared/desktop/facebook.png" alt=""></a>
 
-  The Features
+              <!-- YouTube -->
+              <a href="#"><img src="assets/shared/desktop/youtube.png" alt=""></a>
 
-  Basic
-  Pro
-  Business
+              <!-- twitter  -->
+              <a href="#"><img src="assets/shared/desktop/twitter.png" alt=""></a>
 
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
+              <!-- pinterest -->
+              <a href="#"><img src="assets/shared/desktop/pinterest.png" alt=""></a>
 
-  We're in Beta. Get your invite today!
-  
-  Get an invite
+              <!-- Instagram -->
+              <a href="#"><img src="assets/shared/desktop/instagram.png" alt=""></a>
+            </div>
+          </div>
 
-  Home
-  Stories
-  Features
-  Pricing
 
-  Get an invite
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ms-1 text-uppercase">
+            <!-- Links -->
+            <p>
+              <a href="#!" class="text-reset">home</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">stories</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">features</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">pricing</a>
+            </p>
+          </div>
+          <!-- Grid column -->
 
-  Copyright 2019. All Rights Reserved
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 me-1 d-flex flex-column jusity-content-end gap-5">
+              <div class="arrow-btn d-flex justify-content-center justify-content-md-start">
+              <h4 class="mb-0 text-white">GET AN INVITE</h4>
+              <img class="white-arrow ms-2 pb-4" src="./assets/shared/desktop/arrow.svg" alt="right arrow">
+              </div>
+            <div>
+              <p class="text-secondary">
+                Copyright 2019. All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
   <script src="scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

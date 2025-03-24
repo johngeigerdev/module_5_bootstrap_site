@@ -8,7 +8,7 @@ const prices = document.querySelectorAll('.price'); //price
 const periods = document.querySelectorAll('.billing-period'); //per month/per year <p> element
 
 toggle.addEventListener('change', () => {
-    const isYearly = toggle.checked; // sets it to be 'checked' if it is on 'yearly'
+    const isYearly = toggle.checked; // if it is 'checked', then isYearly is true
     //highlight the one selected
     labelMonthly.classList.toggle('active', !isYearly);
     labelYearly.classList.toggle('active', isYearly);
